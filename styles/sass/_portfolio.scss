@@ -1,0 +1,49 @@
+.portfolio {
+  width: 100%;
+  background-color: #ffffff;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 0.3rem;
+  // dimensions
+  padding: 5rem 0;
+}
+
+.projectTitles {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projectOne {
+  padding: 5rem 0;
+}
+
+.projectOne {
+  display: flex;
+}
+
+.projectOneImg,
+.projectOneInfo {
+  width: calc((100% / 2) - 2rem);
+  text-align: justify;
+  margin: 0 0.5rem;
+}
+
+.projectOneImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    transform: rotate(1deg);
+    border-radius: 0.1rem;
+    box-shadow: 0 0.7rem 1rem;
+  }
+}
+
+.projectOneInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,73 @@
+.about {
+  width: 100%;
+}
+
+.aboutCtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutInfo,
+.aboutImg {
+  width: calc((100% / 2) - 2rem);
+  text-align: justify;
+  margin: 0 0.5rem;
+}
+
+.profileImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // position
+  position: relative;
+
+  img {
+    border-radius: 0.1rem;
+    box-shadow: 0 0.7rem 1rem;
+    transform: scale(0.8) rotate(-1deg);
+  }
+}
+
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    // text-align: left;
+    font-size: 6rem;
+    border-bottom: 0.3rem solid #252525;
+    margin-bottom: 3rem;
+  }
+
+  .abtPTwo {
+    margin-top: 1rem;
+  }
+
+  // .abtLang {
+  //   font-style: italic;
+  //   font-weight: 700;
+  // }
+}
+
+.scrollToExp {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 9.5rem;
+  // transition: all 0.5s;\
+
+  a {
+    transition: all 0.5s;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      transform: rotate(1.5deg);
+    }
+  }
+}
