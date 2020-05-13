@@ -278,7 +278,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f6f5f0;
 }
 
 * {
@@ -442,21 +441,18 @@ header {
   font-size: 2.8rem;
 }
 
-.scrollBtn {
+.scrollBtn a {
+  font-size: 5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.scrollBtn a {
-  font-size: 5rem;
-}
-
-.scrollBtn:hover, .scrollBtn:focus {
+.scrollBtn a:hover, .scrollBtn a:focus {
   -webkit-transform: scale(1.1) translateY(0.5rem);
           transform: scale(1.1) translateY(0.5rem);
 }
 
-.scrollBtn:active {
+.scrollBtn a:active {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -550,13 +546,26 @@ header {
 
 .portfolio {
   width: 100%;
-  background-color: #ffffff;
+  background-image: url(../../assets/sectionBgTwo.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 0 0 0.3rem;
           box-shadow: 0 0 0.3rem;
+  border-radius: 0.2rem;
   padding: 5rem 0;
+}
+
+.portfolioCtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projectTitles {
@@ -565,24 +574,33 @@ header {
   margin-bottom: 3rem;
 }
 
-.projectOne {
-  padding: 5rem 0;
-}
-
-.projectOne {
+.projectOne,
+.projectTwo,
+.projectThree {
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.projectThree {
+  margin-bottom: 8rem;
+}
+
 .projectOneImg,
-.projectOneInfo {
+.projectOneInfo,
+.projectTwoImg,
+.projectTwoInfo,
+.projectThreeImg,
+.projectThreeInfo {
   width: calc((100% / 2) - 2rem);
   text-align: justify;
   margin: 0 0.5rem;
 }
 
-.projectOneImg {
+.projectOneImg,
+.projectTwoImg,
+.projectThreeImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,15 +612,28 @@ header {
           align-items: center;
 }
 
-.projectOneImg img {
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
+.projectOneImg img,
+.projectTwoImg img,
+.projectThreeImg img {
   border-radius: 0.1rem;
   -webkit-box-shadow: 0 0.7rem 1rem;
           box-shadow: 0 0.7rem 1rem;
 }
 
-.projectOneInfo {
+.projectOneImg,
+.projectThreeImg {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.projectTwoImg {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.projectOneInfo,
+.projectTwoInfo,
+.projectThreeInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,4 +644,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.experience {
+  width: 100%;
 }
