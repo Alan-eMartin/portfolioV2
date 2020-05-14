@@ -1,0 +1,27 @@
+.skills {
+  width: 100%;
+}
+
+.programLangs {
+  display: flex;
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    // perspective: 100rem;
+  }
+
+  li {
+    width: calc((100% / 5));
+    padding: 1.5rem;
+    // animation
+    transition: all 0.7s;
+    // transform-style: preserve-3d;
+  }
+}
+
+.backLang {
+  text-align: center;
+  margin-top: 0.5rem;
+}

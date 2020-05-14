@@ -42,12 +42,6 @@ input {
   border: none;
   margin: 0.5rem 0;
   opacity: 0.8;
-  transition: all 0.3s;
-
-  &:focus {
-    opacity: 1;
-    transform: scale(1.03);
-  }
 }
 
 textarea {
@@ -56,10 +50,20 @@ textarea {
   border: none;
   margin: 0.5rem 0;
   resize: none;
-  opacity: 0.8;
+}
+
+input,
+textarea {
+  opacity: 0.7;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.9;
+  }
 
   &:focus {
     opacity: 1;
+    transform: scale(1.03);
   }
 }
 

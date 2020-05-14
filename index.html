@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alan Martin | Web Devoloper</title>
     <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
@@ -22,7 +18,28 @@
     <!-- header start -->
     <header id="home">
       <div class="container">
+
         <nav class="topNav">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="cBtn">
+              <a href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="mobileNav hidden">
           <ul>
             <li>
               <a href="#home">Home</a>
@@ -120,8 +137,13 @@
             <div class="projectOneInfo">
               <h3 class="projectTitles">Trivia TV</h3>
               <p>
-                Trivia Tv is a fun and interactive trivia game, The user is given chance to test their TV knowledge with ten randomly generated questions from the TriviaDB API
+                "Trivia Tv" is a fun and interactive trivia game and my first introduction to paired programming. The user is given a chance to test their knowledge of pop culture with ten randomly generated questions from the TriviaDB API.
               </p>
+              <p class="langUsed">JavaScript | jQuery | HTML | SCSS</p>
+              <div class="portBtns">
+                <a href="https://alanandmiguelprojectfour.github.io/triviaApp/" class="btn">Live Version</a>
+                <a href="https://github.com/alanAndMiguelProjectFour/triviaApp" class="btn">GitHub</a>
+              </div>
             </div>
             <div class="projectOneImg">
               <a
@@ -149,8 +171,13 @@
             <div class="projectTwoInfo">
               <h3 class="projectTitles">Print Shoppe</h3>
               <p>
-                Printshoppe was my first project with React JS. PrintShoppe highlights my journey as a photographer and acts as a marketplace for selling prints from my collection.
+                "PrintShoppe" was my first application built with React JS and FireBase. This app highlights my journey as a photographer and acts as a marketplace for prints from my collection.
               </p>
+              <p class="langUsed">React | FireBase | HTML | SCSS </p>
+              <div class="portBtns">
+                <a href="https://alan-emartin.github.io/05-project/" class="btn">Live Version</a>
+                <a href="https://github.com/Alan-eMartin/05-project" class="btn">GitHub</a>
+              </div>
             </div>
           </div>
           <!-- project two end -->
@@ -159,10 +186,15 @@
           <div class="projectThree">
             <div class="projectThreeInfo">
               <h3 class="projectTitles">
-                Delicious <span>PSD Conversion</span></h3>
+                Delicious</h3>
               <p>
-                Delicious is a fully responsive three page food focused website and blog using <span>HTML</span> and <span>Sass</span>
+                "Delicious" is a fully responsive three page PSD conversion. Using modern CSS layout tools like <span>Flex Box</span>, allowed reduced media queries and a layout that is scaled to best suit the user's device.
               </p>
+              <p class="langUsed">HTML | SCSS</p>
+              <div class="portBtns">
+                <a href="https://alan-emartin.github.io/alan-martin-project-two/index.html" class="btn">Live Version</a>
+                <a href="https://github.com/Alan-eMartin/alan-martin-project-tw" class="btn">GitHub</a>
+              </div>
             </div>
             <div class="projectThreeImg">
               <a
@@ -180,101 +212,122 @@
       <!-- portfolio section end -->
 
       <!-- experience section start -->
-      <section class="experience" id="experience">
+      <section class="skills" id="skills">
         <div class="container">
           <h2>Skills</h2>
           <div class="programLangs">
             <ul>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/html5.svg"
                   alt="HTML 5 Logo"
                   aria-label="HTML Five"
                   title="HTML 5"
                 />
+                <div class="backLang">
+                  <h4>HTML</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/css3.svg"
                   alt="CSS 3 Logo"
                   aria-label="CSS Three"
                   title="CSS 3"
                 />
+                <div class="backLang">
+                  <h4>CSS</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/sass.svg"
                   alt="Sass Logo"
                   aria-label="SCSS / Sass"
                   title="SCSS / Sass"
                 />
+                <div class="backLang">
+                  <h4>SCSS</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/javascript.svg"
                   alt="JavaScript Logo"
                   aria-label="JavaScript"
                   title="JavaScript"
                 />
+                <div class="backLang">
+                  <h4>JavaScript</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/jquery.svg"
                   alt="Jquery Logo"
-                  aria-label="J Query"
+                  aria-label="jQuery"
                   title="jQuery"
                 />
+                <div class="backLang">
+                  <h4>jQuery</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/react.svg"
                   alt="React JS logo"
                   aria-label="React JS"
                   title="React JS"
                 />
+                <div class="backLang">
+                  <h4>React</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/github.svg"
                   alt="GitHub Logo"
                   aria-label="Github"
                   title="GitHub"
                 />
+                <div class="backLang">
+                  <h4>GitHub</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/visualstudio.svg"
                   alt="VS Code Logo"
                   aria-label="Visual Studio Code"
                   title="Visual Studio Code"
                 />
+                <div class="backLang">
+                  <h4>VS Code</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
                   src="./assets/langSvgs/photoshop.svg"
                   alt="PhotoShop Logo"
                   aria-label="PhotoShop"
                   title="PhotoShop"
                 />
+                <div class="backLang">
+                  <h4>Photoshop</h4>
+                </div>
               </li>
-              <li>
+              <li class="skillTile">
                 <img
-                  src="./assets/langSvgs/slack.svg"
+                  src="./assets/langSvgs/firebase.svg"
                   alt="Slack Logo"
                   aria-label="Slack"
                   title="Slack"
                 />
+                <div class="backLang">
+                  <h4>FireBase</h4>
+                </div>
               </li>
             </ul>
-          </div>
-          <div class="expContainer">
-            <h2>Experience</h2>
-
-            <div class="expBlurb">
-              
-            </div>
-            
-          </div>
         </div>
       </section>
       <!-- experience section end -->

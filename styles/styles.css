@@ -341,6 +341,14 @@ section {
   margin-top: 5rem;
 }
 
+.btn {
+  color: #fafafa;
+  background-color: #252525;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+}
+
 body {
   background-color: #f6f6f6;
   margin: 3.5rem;
@@ -685,8 +693,59 @@ header {
           justify-content: center;
 }
 
-.experience {
+.projectOneInfo p,
+.projectTwoInfo p,
+.projectThreeInfo p {
+  padding: 0 3rem;
+}
+
+.projectOneInfo p span,
+.projectTwoInfo p span,
+.projectThreeInfo p span {
+  font-weight: 700;
+}
+
+.langUsed {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.portBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.portBtns a {
+  margin: 0 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+.portBtns a:hover, .portBtns a:focus {
+  opacity: 1;
+}
+
+.portBtns a:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skills {
   width: 100%;
+}
+
+.programLangs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .programLangs ul {
@@ -700,24 +759,14 @@ header {
 
 .programLangs li {
   width: calc((100% / 5));
-  padding: 3rem;
+  padding: 1.5rem;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
-.expContainer {
-  margin-top: 6rem;
-}
-
-.expContainer h2 {
-  text-align: right;
-}
-
-.expContainer p {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+.backLang {
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -771,14 +820,6 @@ input {
   border: none;
   margin: 0.5rem 0;
   opacity: 0.8;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-input:focus {
-  opacity: 1;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
 }
 
 textarea {
@@ -787,11 +828,25 @@ textarea {
   border: none;
   margin: 0.5rem 0;
   resize: none;
-  opacity: 0.8;
 }
 
+input,
+textarea {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input:hover,
+textarea:hover {
+  opacity: 0.9;
+}
+
+input:focus,
 textarea:focus {
   opacity: 1;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .submit {
