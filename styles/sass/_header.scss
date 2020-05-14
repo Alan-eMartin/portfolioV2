@@ -8,8 +8,8 @@ body {
 header {
   height: 90vh;
   width: 100%;
-  background-image: url(../../assets/sectionBg.jpg);
-  background-position: top;
+  background-image: url(../../assets/headerBg.jpg);
+  // background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 0.3rem;
@@ -48,6 +48,7 @@ header {
       a:hover,
       a:focus {
         transform: scale(1.5) translateY(0.5rem);
+        font-weight: 700;
       }
     }
   }

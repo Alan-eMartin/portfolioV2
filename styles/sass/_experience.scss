@@ -1,3 +1,34 @@
 .experience {
   width: 100%;
 }
+
+.programLangs {
+  // display: flex;
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: calc((100% / 5));
+    padding: 3rem;
+    // animation
+    transition: all 0.7s;
+    transform-style: preserve-3d;
+  }
+}
+
+.expContainer {
+  margin-top: 6rem;
+
+  h2 {
+    text-align: right;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
